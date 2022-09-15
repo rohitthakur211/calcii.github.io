@@ -1,0 +1,55 @@
+.plcalculate{
+    background-color: red;
+    height: 40rem;
+    border: 0.2rem solid black;
+ }
+ h1 {
+    text-align: center;
+ 
+ }
+
+ p {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+ }
+
+ button {
+    margin-left: 25rem;
+    padding: 1rem;
+     margin-top: 2rem;
+    width: 20rem;
+ }
+
+ .cp {
+    padding: 1rem;
+    font-size: 1rem;
+ }
+
+ .sp {
+    padding: 1rem;
+    font-size: 1rem;
+ }
+
+ .loss {
+
+    text-align: center;
+    color: rgb(12, 12, 12);
+ }
+
+ .lossPercentage {
+    text-align: center;
+    color: rgb(14, 13, 13);
+ }
+ .nothing{
+    text-align: center;
+    color: rgb(14, 13, 13);
+ }
+ @media screen and(max-width:800px) {
+ .plcalculate{
+    height: 60rem;
+
+ }
+
+    
+ }

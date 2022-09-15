@@ -1,0 +1,79 @@
+body {
+    padding-bottom: 1.25rem;
+  }
+  
+  /* Set padding to keep content from hitting the edges */
+  .body-content {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+  
+  /* Override the default bootstrap behavior where horizontal description lists 
+     will truncate terms that are too long to fit in the left column 
+  */
+  .dl-horizontal dt {
+    white-space: normal;
+  }
+  
+  /* Set width on the form input elements since they're 100% wide by default 
+  input,
+  select,
+  textarea {
+      max-width: 280px;
+  }*/
+  
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #02070e;
+    border-radius: 1.5rem;
+  }
+  
+  .nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #02070e;
+  }
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  datalist {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    width: 100%;
+  }
+  .btn {
+    border-radius: 1.5rem;
+    min-width: 6.25rem;
+  }
+  
+  /*Print*/
+  @media print {
+    #navbar_var * {
+      visibility: hidden;
+    }
+  
+    #btnprint {
+      visibility: hidden !important;
+    }
+  
+    #page-wrapper * {
+      visibility: visible;
+  
+      -webkit-print-color-adjust: exact !important;
+    }
+    input[type="range"],
+    datalist {
+      visibility: hidden;
+    }
+    #btnhideresult {
+      visibility: hidden;
+    }
+    #btnviewreport {
+      visibility: hidden;
+    }
+  }

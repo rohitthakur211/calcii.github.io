@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: #F7F9FB;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: #355773;
+  }
+  
+  h1{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  hr{
+    border: none;
+    border-top: solid 0.0625rem #F1F4F7;
+    box-sizing: content-box;
+    width: 100%;
+    padding: 0 1.25rem;
+    margin: 1.25rem 0 1.25rem -1.25rem;
+  }
+  
+  .converter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    min-width: 17.5rem;
+    max-width: 25rem;
+    max-height: 16.25rem;
+    margin: auto;
+    padding: 0.625rem 1.25rem 1.25rem 1.25rem;
+    border-radius: 0.375rem;
+    border: 0.0625rem solid #E1E8EC;
+    background-color: #fff;
+  }
+  
+  .row{
+    margin: 0.625rem 0;
+  }
+  
+  .row:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .row .w6,
+  .row .w12{
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 0 0.3125rem; 
+  }
+  
+  .row .w12{
+    width: 100%;
+  }
+  
+  input[type="text"],
+  input[type="number"]{
+    display: block;
+    width: 100%;
+    border-radius: 0.25rem;
+    border: solid 0.0625rem #E1E8EC;
+    padding: 0.625rem 0.9375rem;
+  }
+  
+  input[type="text"][readonly]{
+    background-color: #F1F4F7;
+  }
+  
+  label{
+    position: absolute;
+    top: 0.0625rem;
+    left: 0.375rem;
+    width: 1.875rem;
+    height: 2.0625rem;
+    line-height: 2.0625rem;
+    text-align: center;
+    background: #F1F4F7;
+    border-radius: 0.25rem 0 0 0.25rem;
+    font-size: 0.625rem;
+    border-right: solid 0.0625rem #E1E8EC;
+  }
+  
+  label + input[type="text"],
+  label + input[type="number"]{
+    padding-left: 2.5rem;
+  }

@@ -1,0 +1,106 @@
+.loan-calculator {
+    font-family: "Roboto", sans-serif;
+    width: 37.5rem;
+    margin: 1.5rem auto;
+    background: #fff;
+    box-shadow: 0 0.75rem 3.125rem -0.6875rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    color: #14213d;
+    overflow: hidden;
+  }
+  
+  .loan-calculator,
+  .loan-calculator * {
+    box-sizing: border-box;
+  }
+  
+  .loan-calculator .top {
+    background: #18191a;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .loan-calculator .top h2 {
+    margin-top: 0;
+  }
+  
+  .loan-calculator form {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+  
+  .loan-calculator .title {
+    margin-bottom: 1rem;
+  }
+  
+  .loan-calculator form input {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+  }
+  
+  .loan-calculator .result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .loan-calculator .result .left {
+    width: 100%;
+    padding: 0.5rem 2rem;
+  }
+  
+  .loan-calculator .left h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  
+  .loan-calculator .result .value {
+    font-size: 1.875rem;
+    font-weight: 900;
+    padding-bottom: 0.625rem;
+    border-bottom: 0.0625rem solid rgba(20, 33, 61, 0.2);
+  }
+  
+  .loan-calculator .result .value::before {
+    content: "\20B9";
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-right: 0.375rem;
+    opacity: 0.4;
+  }
+  
+  .loan-calculator .calculate-btn {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 1.5rem 0;
+  }
+  
+  .loan-calculator .right {
+    width: 50%;
+  }
+  
+  @media (max-width: 650px) {
+    .loan-calculator {
+      width: 90%;
+      max-width: 31.25rem;
+    }
+  
+    .loan-calculator form {
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+  
+    .loan-calculator .result {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
